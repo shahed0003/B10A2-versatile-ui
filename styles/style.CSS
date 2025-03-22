@@ -38,17 +38,17 @@ body {
 
 /* header styles */
 header {
-    width: 98vw;
-    height: 97vh;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.8) 0%, rgba(119, 119, 119, 0.25) 100%);
-
+    max-width: 1440px;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.16) ;
+    margin: 0 auto;
 }
 
 #full-head {
     max-width: 1110px;
     margin: 50px auto;
     justify-self: center;
-    height: 97vh;
+    height: 768px;
 }
 
 /* nav styles */
@@ -224,10 +224,76 @@ header {
 }
 
 
+
+/* habit section */
+
+.habit-section {
+    width: 1440px;
+    margin: 100px auto;
+}
+
+.habit-section-head {
+    color: white;
+    width: 1044px;
+    margin: 0 auto;
+}
+.habit-body{
+    text-align: center;
+}
+.habit-body-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--font-color-white);
+    margin: 0;
+}
+.habit-body-description{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 58px;
+}
+
+.habit-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.habit-image-container{
+    max-width: 231px;
+    max-height: 274px;
+    text-align: center;
+}
+
+.habit-image-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 30px 25.5px;
+    margin-top: 0;
+}
+
+.habit-image-title{
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.habit-image-description{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
 @media screen and (max-width: 575px) {
     header {
-    background: none;
+        height: 1024px;
+        width: 393px;
+        background: none;
     }
+
     .nav-bar {
         margin-left: 50px;
     }
@@ -266,10 +332,12 @@ header {
         gap: 50px;
         margin-left: 50px;
     }
-    .banner div button{
+
+    .banner div button {
         padding: 16px 40px;
         width: 100%;
     }
+
     #btn-club {
         display: none;
     }
@@ -292,6 +360,28 @@ header {
         margin-top: -350px;
         margin-left: 300px;
     }
+
+/* habit section */
+
+.habit-section{
+    width: 338px;
+    height: 1398px;
+}
+
+.habit-body{
+    width: 318px;
+    height: 124px;
+}
+
+.habit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+
+
+
+
 
 
 }
