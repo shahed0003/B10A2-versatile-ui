@@ -127,6 +127,7 @@ header {
 
 .btn-container {
     display: flex;
+    gap: 14px;
 }
 
 .btn-secondary {
@@ -137,7 +138,7 @@ header {
     color: var(--font-color-white);
     padding: 16px 48px;
     margin-left: 14px;
-    max-width: 200px;
+    max-width: 224px;
     background-color: black;
 }
 
