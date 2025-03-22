@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Miama';
+    src: url(../assets/miama-font/Miama.ttf) format('truetype');
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared style */
+body {
+    max-width: 1440px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+:root {
+    --orange-color: rgba(230, 83, 60, 1);
+    --font-color-white: rgba(255, 255, 255, 1);
+    --font-color-gray: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+    background-color: var(--orange-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 42px;
+    color: var(--font-color-white);
+    padding: 16px 46.5px;
+}
+
+
+
+/* header styles */
+header {
+    width: 98vw;
+    height: 97vh;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.8) 0%, rgba(119, 119, 119, 0.25) 100%);
+
+}
+
+#full-head {
+    max-width: 1110px;
+    margin: 50px auto;
+    justify-self: center;
+    height: 97vh;
+}
+
+/* nav styles */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: var(--orange-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-bar-item {
+    max-width: 465px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    display: flex;
+    gap: 47px;
+    align-items: center;
+}
+
+.nav-item {
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--font-color-white);
+}
+
+#nav-home {
+    background-color: var(--orange-color);
+    border-radius: 46px;
+    padding: 8px 20px;
+    border: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* banner style */
+.head-section {
+    max-width: 1110px;
+
+}
+
+.banner {
+    display: flex;
+
+
+}
+
+.banner-body {
+    margin: 64px 0px 76px 0px;
+}
+
+.banner-title {
+    font-size: 4.875rem;
+    font-weight: 900;
+    color: var(--font-color-white);
+}
+
+#miama {
+    font-family: 'Miama';
+    color: var(--font-color-white);
+    font-size: 4.875rem;
+}
+
+.banner-description {
+    font-size: 1rem;
+    color: var(--font-color-gray);
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-secondary {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 1px solid var(--font-color-white);
+    border-radius: 42px;
+    color: var(--font-color-white);
+    padding: 16px 48px;
+    margin-left: 14px;
+    max-width: 200px;
+    background-color: black;
+}
+
+.banner-image {
+    width: 349px;
+    height: 580px;
+    margin-top: 32px;
+    margin-left: 87px;
+}
+
+.banner-tutorial {
+    display: flex;
+    align-items: center;
+    background-color: rgba(48, 48, 48, 0.54);
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-self: center;
+    margin-top: -180px;
+    margin-left: 350px;
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+}
+
+#tutorial-ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    color: #FAFAF9;
+    text-align: center;
+    align-content: center;
+    margin: 28px 12px 28px 23px;
+}
+
+.play-icon {
+    visibility: hidden;
+}
+
+.tutorial-body {
+    margin: 20px 23px 20px 0px;
+}
+
+.tutorial-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--font-color-white);
+    margin: 0;
+
+}
+
+.tutorial-description {
+    font-size: 1rem;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.banner-workout {
+    width: 130px;
+    height: 98px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    margin-top: -350px;
+    margin-left: 1000px;
+    padding: 17px 23px 16px 24px;
+}
+
+.workout-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--font-color-white);
+    margin: 0;
+    margin-top: 17px;
+}
+
+.workout-description {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+    margin-top: 4px;
+}
+
+
+@media screen and (max-width: 575px) {
+    header {
+    background: none;
+    }
+    .nav-bar {
+        margin-left: 50px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+        color: white;
+        margin-left: 197px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-body {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .banner-title {
+        width: 285px;
+        margin-left: 50px;
+    }
+
+    .banner-description {
+        width: 274px;
+        margin-left: 50px;
+    }
+
+    .btn-container {
+        gap: 50px;
+        margin-left: 50px;
+    }
+    .banner div button{
+        padding: 16px 40px;
+        width: 100%;
+    }
+    #btn-club {
+        display: none;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-tutorial {
+        margin-top: -300px;
+        margin-left: 0;
+        justify-self: left;
+    }
+
+    .play-icon {
+        visibility: visible;
+    }
+
+    .banner-workout {
+        margin-top: -350px;
+        margin-left: 300px;
+    }
+
+
+}
